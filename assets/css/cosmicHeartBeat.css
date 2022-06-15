@@ -1,0 +1,149 @@
+body, html {
+  height: 100%;
+  background-color: #191919;
+}
+
+/*body {*/
+/*  height: 100%;*/
+/*  background-color: red;*/
+/*}*/
+
+#cosmicContainer {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #191919;
+  position: relative;
+}
+
+#blackhole {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  display: flex;
+}
+
+.centerHover {
+  width: 255px;
+  height: 255px;
+  border-radius: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -128px;
+  margin-left: -128px;
+  z-index: 2;
+  cursor: pointer;
+  line-height: 255px;
+  text-align: center;
+  transition: all 500ms;
+}
+
+.angel {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background: url(../../svg/Angel.svg) center, no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.demon {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  opacity: 100%;
+  background: url(../../svg/Demon.svg) center, no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 1s;
+}
+
+.demon:hover {
+  opacity: 0;
+  transition: 1s;
+  /*pointer-events: none;*/
+}
+
+/*.fade {*/
+/*  background-color: #DB1F48;*/
+/*  color: #fff;*/
+/*  transition: background-color 1s;*/
+/*}*/
+
+/*.fade:hover {*/
+/*  background-color: #004369;*/
+/*}*/
+
+/*.fade:focus,*/
+/*.fade:active {*/
+/*  background-color: black;*/
+/*  transition: none;*/
+/*}*/
+
+/*.centerHover.open {*/
+/*  !*opacity: 50%;*!*/
+/*  pointer-events: none;*/
+/*}*/
+
+/*.centerHover:hover span {*/
+/*  width: 10px;*/
+/*  height: 10px;*/
+/*  color: #DDD;*/
+/*}*/
+
+/*.centerHover:hover span:before {*/
+/*  background-color: #DDD;*/
+/*}*/
+
+/*.centerHover:hover span:after {*/
+/*  background-color: #DDD;*/
+/*}*/
+
+/*.centerHover span {*/
+/*  color: #666;*/
+/*  font-family: serif;*/
+/*  font-size: 18px;*/
+/*  position: relative;*/
+/*  transition: all 500ms;*/
+/*}*/
+
+/*.centerHover span:before {*/
+/*  content: "";*/
+/*  display: inline-block;*/
+/*  height: 1px;*/
+/*  width: 16px;*/
+/*  margin-right: 12px;*/
+/*  margin-bottom: 4px;*/
+/*  background-color: #666;*/
+/*  transition: all 500ms;*/
+/*}*/
+
+/*.centerHover span:after {*/
+/*  content: "";*/
+/*  display: inline-block;*/
+/*  height: 1px;*/
+/*  width: 16px;*/
+/*  margin-left: 12px;*/
+/*  margin-bottom: 4px;*/
+/*  background-color: #666;*/
+/*  transition: all 500ms;*/
+/*}*/
+
+canvas {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
